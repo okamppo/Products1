@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+x:Class="Products1.SalesPage"
+Title="Ventas">
+	<ContentPage.Content>
+		<StackLayout Padding="10,30,10,10" Spacing="10">
+			<Label x:Name="titleLabel"
+				   HorizontalOptions="Center"
+				   VerticalOptions="Center" />
+			<ActivityIndicator x:Name="waitActivityIndicator"
+							   HorizontalOptions="Center"
+							   VerticalOptions="Center"
+							   Color="{StaticResource MainColor}" />
+			<StackLayout Orientation="Horizontal">
+			  <Button x:Name="newButton"
+					  Style="{StaticResource newSaleButton}"
+					  HorizontalOptions="FillAndExpand"
+					  VerticalOptions="Center" />
+			  <Button x:Name="findButton"
+					  Style="{StaticResource findButton}"
+				   	  HorizontalOptions="FillAndExpand"
+				 	  VerticalOptions="Center" />
+			 </StackLayout>
+			 <ListView x:Name="salesListView"
+			 		   HorizontalOptions="FillAndExpand"
+			 		   VerticalOptions="FillAndExpand" />
+		 </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

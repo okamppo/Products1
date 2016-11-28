@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="Products1.NewTaxPage" Title="Nuevo Impuesto">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout>
+			<ActivityIndicator x:Name="waitActivityIndicator"
+					HorizontalOptions="Center"
+					VerticalOptions="Center"/>
+			<StackLayout Orientation="Horizontal">
+			  	<Label Text="Descripción:"
+			  		HorizontalOptions="Start"
+					VerticalOptions="Center"/>
+				<Entry x:Name="descriptionEntry"
+					Placeholder="Descripción"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center"/>
+			 </StackLayout>
+			<StackLayout Orientation="Horizontal">
+			  	<Label Text="Porcentaje:"
+				  		HorizontalOptions="Start"
+						VerticalOptions="Center"/>
+				<Entry x:Name="taxPercentEntry"
+						Placeholder="Porcentaje"
+						HorizontalOptions="FillAndExpand"
+						VerticalOptions="Center"/>
+			</StackLayout>
+			<Button x:Name="newButton"
+				Style="{StaticResource NewButton}"
+				HorizontalOptions="FillAndExpand"
+			   	VerticalOptions="Center"/>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

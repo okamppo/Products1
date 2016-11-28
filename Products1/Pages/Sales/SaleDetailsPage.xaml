@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+x:Class="Products1.SaleDetailsPage"
+Title="Detalle de venta">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Padding="10,30,10,10" Spacing="10">
+				<Label x:Name="titleLabel"
+				   HorizontalOptions="Center"
+				   VerticalOptions="Center" />
+				<ActivityIndicator x:Name="waitActivityIndicator"
+								   HorizontalOptions="Center"
+								   VerticalOptions="Center" />
+				<StackLayout Orientation="Horizontal">
+				  	<Label Text="Id venta:"
+				  		   HorizontalOptions="Start"
+						   VerticalOptions="Center" />
+					<Entry x:Name="saleIDEntry"
+						   IsEnabled="false"
+						   HorizontalOptions="FillAndExpand"
+						   VerticalOptions="Center" />
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+				  	<Label Text="Nombre cliente:"
+				  		   HorizontalOptions="Start"
+						   VerticalOptions="Center" />
+					<Entry x:Name="customerFullNameEntry"
+						   IsEnabled="false"
+						   HorizontalOptions="FillAndExpand"
+						   VerticalOptions="Center" />
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+				  	<Label Text="Identificación cliente:"
+				  		   HorizontalOptions="Start"
+						   VerticalOptions="Center" />
+					<Entry x:Name="customerDocumentEntry"
+						   IsEnabled="false"
+						   HorizontalOptions="FillAndExpand"
+						   VerticalOptions="Center" />
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+				  	<Label Text="Fecha venta:"
+				  		   HorizontalOptions="Start"
+						   VerticalOptions="Center" />
+					<Entry x:Name="saleDateEntry"
+						   IsEnabled="false"
+						   HorizontalOptions="FillAndExpand"
+						   VerticalOptions="Center" />
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+				  	<Label Text="Total venta:"
+				  		   HorizontalOptions="Start"
+						   VerticalOptions="Center" />
+					<Entry x:Name="saleTotalEntry"
+						   IsEnabled="false"
+						   HorizontalOptions="FillAndExpand"
+						   VerticalOptions="Center" />
+				</StackLayout>				
+				<Label Text="Productos"
+					   Font="20"
+					   HorizontalOptions="Center"
+					   VerticalOptions="Center" />
+	 			<ListView x:Name="detailsListView"
+			 		   	   HorizontalOptions="FillAndExpand"
+			 		       VerticalOptions="FillAndExpand" />
+   				 <StackLayout Orientation="Horizontal">
+					  <Button x:Name="backButton"
+							  Style="{StaticResource backButton}"
+							  HorizontalOptions="FillAndExpand"
+							  VerticalOptions="Center" />
+				 </StackLayout>
+			 </StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

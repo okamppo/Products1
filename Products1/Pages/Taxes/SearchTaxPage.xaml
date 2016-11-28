@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="Products1.SearchTaxPage" Title="Buscar Impuesto">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Padding="10,30,10,10" Spacing="10">
+				<ActivityIndicator x:Name="waitActivityIndicator"
+						HorizontalOptions="Center"
+						VerticalOptions="Center"/>
+				<StackLayout Orientation="Horizontal">
+				  	<Label Text="ID Impuesto:"
+				  		HorizontalOptions="Start"
+						VerticalOptions="Center"/>
+					<Entry x:Name="taxIDEntry"
+						Keyboard="Numeric"
+						Placeholder="ID Impuesto"
+						HorizontalOptions="FillAndExpand"
+						VerticalOptions="Center"/>
+				 </StackLayout>
+					  <Button x:Name="searchButton"
+						Style="{StaticResource findButton}"
+						HorizontalOptions="FillAndExpand"
+						VerticalOptions="Center"/>					
+			 </StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
+

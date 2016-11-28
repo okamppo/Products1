@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+x:Class="Products1.EditDeleteProductPage" Title="Editar/Borrar Producto">
+	<ContentPage.Content>
+				<ScrollView>
+		<StackLayout Padding="10,30,10,10" Spacing="10">
+			<ActivityIndicator x:Name="waitActivityIndicator"
+					HorizontalOptions="Center"
+					VerticalOptions="Center"/>
+			<StackLayout Orientation="Horizontal">
+			  	<Label Text="ID Producto:"
+			  		HorizontalOptions="Start"
+					VerticalOptions="Center"/>
+				<Entry x:Name="productIDEntry"
+					IsEnabled="false"
+					Placeholder="ID Producto"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center"/>
+			 </StackLayout>
+			<StackLayout Orientation="Horizontal">
+			  	<Label Text="Descripción:"
+			  		HorizontalOptions="Start"
+					VerticalOptions="Center"/>
+				<Entry x:Name="descriptionEntry"
+					Placeholder="Descripción"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center"/>
+			 </StackLayout>
+			 <StackLayout Orientation="Horizontal">
+			  	<Label Text="Precio:"
+			  		HorizontalOptions="Start"
+					VerticalOptions="Center"/>
+				<Entry x:Name="priceEntry"
+					Placeholder="Precio"
+					Keyboard="Numeric"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center"/>
+			 </StackLayout>
+			 <StackLayout Orientation="Horizontal">
+			  	<Label Text="Ultima Compra:"
+			  		HorizontalOptions="Start"
+					VerticalOptions="Center"/>
+				<DatePicker x:Name="lastBuyDatePicker"					
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center"/>
+			 </StackLayout>
+			 <StackLayout Orientation="Horizontal">
+			  	<Label Text="Inventario:"
+			  		HorizontalOptions="Start"
+					VerticalOptions="Center"/>
+				<Entry x:Name="stockEntry"
+					Placeholder="Inventario"
+					Keyboard="Numeric"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center"/>
+			 </StackLayout>
+			 <StackLayout Orientation="Horizontal">
+			  	<Label Text="Comentarios:"
+			  		HorizontalOptions="Start"
+					VerticalOptions="Center"/>
+				<Entry x:Name="remarksEntry"
+					Placeholder="Comentarios"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center"/>
+			 </StackLayout>
+			 <StackLayout Orientation="Horizontal">
+			  	<Label Text="Categoría:"
+			  		HorizontalOptions="Start"
+					VerticalOptions="Center"/>
+				<Picker x:Name="categoryPicker"
+					Title="Seleccione una categoría"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center"/>
+			 </StackLayout>
+			 <StackLayout Orientation="Horizontal">
+			  	<Label Text="Impuesto:"
+			  		HorizontalOptions="Start"
+					VerticalOptions="Center"/>
+				<Picker x:Name="taxPicker"
+					Title="Seleccione un Impuesto"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center"/>
+			 </StackLayout>
+			<StackLayout Orientation="Horizontal">
+			 	<Button x:Name="editButton"
+					Style="{StaticResource saveButton}"
+					VerticalOptions="Center"/>
+			  	<Button x:Name="deleteButton"
+			  		Style="{StaticResource deleteButton}"
+					VerticalOptions="Center"/>
+				<Button x:Name="backButton"
+			  		Style="{StaticResource backButton}"
+					VerticalOptions="Center"/>
+			 </StackLayout>
+		 </StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="Products1.App">
+  <Application.Resources>
+    <ResourceDictionary>
+      <OnPlatform x:Key="GeneralPadding"
+				x:TypeArguments="Thickness"
+				iOS="10"
+				Android="15"
+				WinPhone="15" />
+
+      <!--Colors-->
+      <Color x:Key="MainColor">#0088CC</Color>
+      <Color x:Key="SearchColor">Yellow</Color>
+      <Color x:Key="DangerColor">Red</Color>
+      <Color x:Key="SuccessColor">Green</Color>
+
+      <!--Styles-->
+      <Style x:Key="MainButton" TargetType="Button">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="BackgroundColor" Value="{StaticResource MainColor}" />
+        <Setter Property="BorderRadius" Value="10" />
+        <Setter Property="BorderWidth" Value="2" />
+      </Style>
+
+      <!--Buttons-->
+      <Style x:Key="NewButton" TargetType="Button">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="Text" Value=" Nuevo" />
+        <Setter Property="BackgroundColor" Value="{StaticResource MainColor}" />
+        <Setter Property="BorderRadius" Value="10" />
+        <Setter Property="BorderWidth" Value="2" />
+        <Setter Property="Image" Value="add.png" />
+      </Style>
+
+      <Style x:Key="findButton" TargetType="Button">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="Text" Value=" Buscar" />
+        <Setter Property="BackgroundColor" Value="{StaticResource SearchColor}" />
+        <Setter Property="BorderRadius" Value="10" />
+        <Setter Property="BorderWidth" Value="2" />
+        <Setter Property="Image" Value="search.png" />
+      </Style>
+
+      <Style x:Key="saveButton" TargetType="Button">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="Text" Value=" Guardar" />
+        <Setter Property="BackgroundColor" Value="{StaticResource SuccessColor}" />
+        <Setter Property="BorderRadius" Value="10" />
+        <Setter Property="BorderWidth" Value="2" />
+        <Setter Property="Image" Value="save.png" />
+      </Style>
+
+      <Style x:Key="deleteButton" TargetType="Button">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="Text" Value=" Eliminar" />
+        <Setter Property="BackgroundColor" Value="{StaticResource DangerColor}" />
+        <Setter Property="BorderRadius" Value="10" />
+        <Setter Property="BorderWidth" Value="2" />
+        <Setter Property="Image" Value="delete.png" />
+      </Style>
+
+      <Style x:Key="backButton" TargetType="Button">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="Text" Value=" Volver" />
+        <Setter Property="BackgroundColor" Value="{StaticResource MainColor}" />
+        <Setter Property="BorderRadius" Value="10" />
+        <Setter Property="BorderWidth" Value="2" />
+        <Setter Property="Image" Value="reply.png" />
+      </Style>
+
+      <Style x:Key="addProductButton" TargetType="Button">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="Text" Value=" Adicionar" />
+        <Setter Property="BackgroundColor" Value="{StaticResource SuccessColor}" />
+        <Setter Property="BorderRadius" Value="10" />
+        <Setter Property="BorderWidth" Value="2" />
+        <Setter Property="Image" Value="addProduct.png" />
+      </Style>
+
+      <Style x:Key="newSaleButton" TargetType="Button">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="Text" Value=" Nueva venta" />
+        <Setter Property="BackgroundColor" Value="{StaticResource MainColor}" />
+        <Setter Property="BorderRadius" Value="10" />
+        <Setter Property="BorderWidth" Value="2" />
+        <Setter Property="Image" Value="newSale.png" />
+      </Style>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="Products1.ProductsPage"
+			 Title="Productos">
+	<ContentPage.Content>
+		<StackLayout Padding="10,30,10,10" Spacing="10">
+			<Label x:Name="titleLabel"
+				Font="30"
+				HorizontalOptions="Center"
+				VerticalOptions="Center"/>
+			<ActivityIndicator x:Name="waitActivityIndicator"
+				HorizontalOptions="Center"
+				VerticalOptions="Center"/>
+			<StackLayout Orientation="Horizontal">
+			  <Button x:Name="newButton"
+				Style="{StaticResource NewButton}"
+				HorizontalOptions="FillAndExpand"
+				VerticalOptions="Center" />
+			  <Button x:Name="findButton"
+				Style="{StaticResource findButton}"
+				HorizontalOptions="FillAndExpand"
+				VerticalOptions="Center"/>
+			 </StackLayout>
+			 <ListView x:Name="productsListView"
+			 		   HorizontalOptions="FillAndExpand"
+			 		   VerticalOptions="FillAndExpand"/>
+		 </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

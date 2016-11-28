@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="Products1.NewSalePage" Title="Nueva venta">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Padding="10,30,10,10" Spacing="10">
+				<Label x:Name="titleLabel"
+				       HorizontalOptions="Center"
+				       VerticalOptions="Center" />
+				<ActivityIndicator x:Name="waitActivityIndicator"
+					   HorizontalOptions="Center"
+					   VerticalOptions="Center"/>
+				<StackLayout Orientation="Horizontal">
+				  	<Label Text="Cliente:"
+				  		HorizontalOptions="Start"
+						VerticalOptions="Center"/>
+					<Picker x:Name="customerPicker"
+						Title="Seleccione un cliente"
+						HorizontalOptions="FillAndExpand"
+						VerticalOptions="Center"/>
+			    </StackLayout>
+    			<StackLayout Orientation="Horizontal">
+			  	 <Button x:Name="newButton"
+					  Text="Adicionar producto"
+					  BackgroundColor="Navy"
+					  TextColor="White"
+					  HorizontalOptions="FillAndExpand"
+					  VerticalOptions="Center" />
+				 </StackLayout>				
+				 <Label Text="Productos"
+					   Font="20"
+					   HorizontalOptions="Center"
+					   VerticalOptions="Center" />
+			   <ListView x:Name="productsListView"
+	 		   	   HorizontalOptions="FillAndExpand"
+	 		       VerticalOptions="FillAndExpand" />					  
+   				 <StackLayout Orientation="Horizontal">
+					  <Button x:Name="backButton"
+							  Style="{StaticResource backButton}"
+							  HorizontalOptions="FillAndExpand"
+							  VerticalOptions="Center" />
+				  	  <Button x:Name="saveButton"
+							  Style="{StaticResource saveButton}"
+							  HorizontalOptions="FillAndExpand"
+							  VerticalOptions="Center" />
+				 </StackLayout> 	 			 
+			 </StackLayout>
+		 </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

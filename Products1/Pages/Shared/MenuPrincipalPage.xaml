@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="Products1.MenuPrincipalPage"
+			 Title="Menú Principal">
+
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" Padding="10,30,10,10" Spacing="10">
+			<Label x:Name="titleLabel"
+					Font="30"
+					HorizontalOptions="Center"
+					VerticalOptions="Center" />
+
+			<StackLayout Orientation="Horizontal"
+						 VerticalOptions="Center"
+						 HorizontalOptions="Center">
+				<Button x:Name = "shoppingsButton"
+						Text= " Compras"
+						Style="{StaticResource MainButton}"
+						Image="shopping.png" />
+				<Button x:Name = "salesButton"
+						Text= " Ventas"
+						Style="{StaticResource MainButton}"
+						Image="newSale.png" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal"
+						 VerticalOptions="Center"
+						 HorizontalOptions="Center">
+				<Button x:Name = "productsButton"
+						Text= " Productos"
+						Style="{StaticResource MainButton}"
+						Image="products.png" />
+				<Button x:Name = "customersButton"
+						Text= " Clientes"
+						Style="{StaticResource MainButton}"
+						Image="customer.png" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal"
+						 VerticalOptions="Center"
+						 HorizontalOptions="Center">
+				<Button x:Name = "taxesButton"
+						Text= " Impuestos"
+						Style="{StaticResource MainButton}"
+						Image="taxes.png" />
+				<Button x:Name = "ordersButton"
+						Text= " Órdenes"
+						Style="{StaticResource MainButton}"
+						Image="orders.png" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal"
+						 VerticalOptions="Center"
+						 HorizontalOptions="Center">
+				<Button x:Name = "suppliersButton"
+						Text= " Proveedores"
+						Style="{StaticResource MainButton}"
+						Image="suppliers.png" />
+				<Button x:Name = "categoriesButton"
+						Text= " Categorías"
+						Style="{StaticResource MainButton}"
+						Image="list.png" />
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
